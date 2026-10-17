@@ -33,3 +33,11 @@ p{color:var(--muted);margin:0 0 16px}.lead{font-size:clamp(1.08rem,2.2vw,1.28rem
 .brand img{width:52px;height:52px}
 .brand-tagline{font-size:.78rem}
 }
+
+/* Informational community features are deliberately not styled as clickable cards. */
+.community-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px;row-gap:0;margin-top:26px;border-top:1px solid #49202a}
+.feature-item{display:flex;align-items:flex-start;gap:16px;padding:24px 8px;border-bottom:1px solid #49202a;min-width:0}
+.feature-icon{flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;color:#ff526f;background:rgba(255,23,68,.09);border:1px solid #76243a;border-radius:12px;font-size:1.2rem}
+.feature-item h3{margin:1px 0 6px;color:#fff}
+.feature-item p{margin:0;color:var(--muted);line-height:1.65}
+@media(max-width:760px){.community-features{grid-template-columns:1fr;column-gap:0}.feature-item{padding:20px 2px}}
